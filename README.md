@@ -1,4 +1,4 @@
-⏺ # Batched 1D FFT Benchmark                                                                                                                                                            
+# Batched 1D FFT Benchmark                                                                                                                                                            
                                                                                                                                                                                         
   Benchmarks four implementations of a batched 1D complex FFT on CPU and GPU:
                                                                                                                                                                                         
@@ -11,8 +11,7 @@
                                                                                                                                                                                         
   Tested on NVIDIA P100 and V100 GPUs using synthetic, ORACLE RF, and DNS Challenge datasets.                                                                                           
                                                                                                                                                                                         
-  ## Requirements                                                                                                                                                                       
-                                                                                                                                                                                        
+  # Requirements                                                                                                                                                                                            
   - CUDA 12.3+                                                                                                                                                                          
   - Intel MKL 2025.0                                                                                                                                                                    
   - CMake 3.20+                               
@@ -26,7 +25,7 @@
                                                                                                                                                                                         
   ## Build                                                                                                                                                                              
    
-  ```bash                                                                                                                                                                               
+  bash                                                                                                                                                                               
   mkdir build && cd build
   cmake .. -DCMAKE_BUILD_TYPE=Release         
   cmake --build . --parallel 4            
