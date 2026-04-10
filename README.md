@@ -11,7 +11,7 @@
                                                                                                                                                                                         
   Tested on NVIDIA P100 and V100 GPUs using synthetic, ORACLE RF, and DNS Challenge datasets.                                                                                           
                                                                                                                                                                                         
-  # Requirements                                                                                                                                                                                            
+  ## Requirements                                                                                                                                                                                            
   - CUDA 12.3+                                                                                                                                                                          
   - Intel MKL 2025.0                                                                                                                                                                    
   - CMake 3.20+                               
