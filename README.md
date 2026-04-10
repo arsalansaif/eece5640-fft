@@ -1,13 +1,10 @@
  # Batched 1D FFT Benchmark                                                                                                                                                            
                                                                                                                                                                                         
-  A performance study of batched 1D complex FFT on CPU and GPU. The project implements the Cooley-Tukey radix-2 Decimation-in-Time (DIT) algorithm from scratch in both C++ (CPU) and   
-  CUDA (GPU), then benchmarks it against industry-standard libraries — Intel MKL on CPU and NVIDIA cuFFT on GPU.                                                                        
+  A performance study of batched 1D complex FFT on CPU and GPU. The project implements the Cooley-Tukey radix-2 Decimation-in-Time (DIT) algorithm from scratch in both C++ (CPU) and CUDA (GPU), then benchmarks it against industry-standard libraries — Intel MKL on CPU and NVIDIA cuFFT on GPU.                                                                        
                                                                                                                                                                                         
-  The goal is to understand how close a hand-written implementation can get to a production library, where the bottlenecks are (memory bandwidth vs. compute), and how performance      
-  scales with batch size, FFT size, and thread count.
+  The goal is to understand how close a hand-written implementation can get to a production library, where the bottlenecks are (memory bandwidth vs. compute), and how performance scales with batch size, FFT size, and thread count.
                                                                                                                                                                                         
-  Experiments run on NVIDIA P100 (PCIe, 549 GB/s HBM2) and V100 (SXM2, 900 GB/s HBM2) GPUs using three datasets: synthetic random data, real-world WiFi RF captures (ORACLE), and noisy 
-  speech audio (DNS Challenge).           
+  Experiments run on NVIDIA P100 (PCIe, 549 GB/s HBM2) and V100 (SXM2, 900 GB/s HBM2) GPUs using three datasets: synthetic random data, real-world WiFi RF captures (ORACLE), and noisy speech audio (DNS Challenge).           
                                                                                                                                                                                         
   ## Implementations                                                                                                                                                                    
    
