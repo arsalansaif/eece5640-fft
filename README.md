@@ -23,9 +23,10 @@
   module load intel/mkl-2025.0                                                                                                                                                          
   module load cmake/3.30.2                
                                                                                                                                                                                         
-  ## Build                                                                                                                                                                              
+  ## Build                                                                                                                                            
+
    
-  bash                                                                                                                                                                               
+  ```bash                                                                                                                                                                               
   mkdir build && cd build
   cmake .. -DCMAKE_BUILD_TYPE=Release         
   cmake --build . --parallel 4            
@@ -113,4 +114,4 @@
   Tests all implementations against MKL DFTI using 3 signal types × 3 FFT sizes = 27 tests. All must pass NRMSE < 1e-4.                                                                 
                                           
   ./build/fft_bench --experiment verify                                                                                                                                                 
-                                           
+                                                                        
