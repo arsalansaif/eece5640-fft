@@ -1,0 +1,11 @@
+build/
+datasets/
+results/vtune/
+results/nsight/
+*.nsys-rep
+*.ncu-rep
+*.vtune
+__pycache__/
+*.pyc
+**/.DS_Store
+.Rhistory
