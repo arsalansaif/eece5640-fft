@@ -1,11 +1,9 @@
 #!/bin/bash
 # Download ORACLE RF dataset. Get download links from https://www.genesys-lab.org/oracle
-# Usage: bash scripts/download_oracle.sh [dest_dir]
 
 DEST=${1:-$HOME/datasets/oracle}
 mkdir -p $DEST
 
-# Paste your download links here after requesting access from the ORACLE website
 URLS=(
     # "https://example.com/WiFi_air_X310_3123D52_2ft_run1.tar.gz"
 )
