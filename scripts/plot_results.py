@@ -2,11 +2,10 @@
 """
 Generate all figures for the EECE 5640 FFT benchmark write-up.
 
-Usage:
     cd ~/eece5640-fft
     python3 scripts/plot_results.py --results-dir results --output-dir figures
 
-Figures produced (PDF + PNG):
+Figures produced:
     fig1_throughput_synthetic   — GFlops vs FFT size, all 4 impls, synthetic
     fig2_speedup_synthetic      — Speedup over own_cpu vs FFT size
     fig3_transfer_breakdown     — H2D / kernel / D2H stacked bar (GPU only)
