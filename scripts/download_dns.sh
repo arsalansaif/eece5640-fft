@@ -1,6 +1,5 @@
 #!/bin/bash
 # Download DNS Challenge 4 (ICASSP 2022) noisy speech dataset subset.
-# Usage: bash scripts/download_dns.sh [dest_dir]
 
 DEST=${1:-$HOME/datasets/dns}
 mkdir -p $DEST
