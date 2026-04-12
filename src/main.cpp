@@ -3,17 +3,6 @@
 //   1  CPU (MKL/FFTW3) vs GPU (cuFFT) speedup sweep over FFT sizes
 //   2  Batch-depth scaling at fixed FFT size (1024 by default)
 //
-// Usage:
-//   ./fft_bench --experiment <1|2|all> \
-//               --dataset   <synthetic|oracle|dns> \
-//               --platform  <v100|p100>            \
-//               --data-path <path-to-dataset>      \
-//               --output    <file.csv>             \
-//               [--threads  <n>]                   \
-//               [--repeats  <n>]                   \
-//               [--warmup   <n>]                   \
-//               [--fft-size <n>]   # fix size for exp 2
-//               [--max-gb   <f>]   # max GB of data loaded for real datasets
 
 #include "common/types.hpp"
 #include "common/result.hpp"
@@ -417,7 +406,7 @@ int main(int argc, char** argv) {
         out = &fout;
     }
 
-    // Write CSV header only when creating a new file (or going to stdout)
+    // CSV header only when creating a new file
     bool write_header = cfg.output_file.empty() || fout.tellp() == 0;
     if (write_header)
         write_csv_header(*out);
