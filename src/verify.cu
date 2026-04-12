@@ -3,8 +3,8 @@
 // single-precision normalized RMS error).
 //
 // Test signals:
-//   1. Impulse: x[0] = 1, rest = 0  → DFT should be all-ones (X[k] = 1 ∀k).
-//   2. Single tone: x[n] = exp(2πi·k₀·n/N) → DFT = N at k=k₀, 0 elsewhere.
+//   1. Impulse: x[0] = 1, rest = 0  -> DFT should be all-ones (X[k] = 1 ∀k).
+//   2. Single tone: x[n] = exp(2πi·k₀·n/N) -> DFT = N at k=k0, 0 elsewhere.
 //   3. Random complex: compare each impl against MKL on random input.
 
 #include "verify.cuh"
