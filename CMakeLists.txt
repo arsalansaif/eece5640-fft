@@ -36,7 +36,7 @@ message(STATUS "MKL thread:  ${MKL_GNU_LIB}")
 message(STATUS "MKL include: ${MKL_INCLUDE_DIR}")
 
 # ── FFTW3 (optional — build from source with build_fftw3.sh) ─────────────────
-# If you ran build_fftw3.sh, set -DFFTW3_ROOT=$HOME/local when configuring.
+# If you run build_fftw3.sh, set -DFFTW3_ROOT=$HOME/local when configuring.
 set(_FFTW_HINTS
     "${FFTW3_ROOT}"
     "$ENV{FFTW3_ROOT}"
