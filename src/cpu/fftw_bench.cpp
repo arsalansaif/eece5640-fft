@@ -16,7 +16,7 @@ BenchResult run_fftw_bench(
     int                num_repeats,
     int                warmup)
 {
-    // One-time thread initialisation (safe to call repeatedly; idempotent).
+    // One-time thread initialisation
 #ifdef HAVE_FFTW3_THREADS
     static bool init_done = false;
     if (!init_done) {
@@ -44,8 +44,7 @@ BenchResult run_fftw_bench(
     static_assert(sizeof(cf32) == sizeof(fftwf_complex), "float complex size mismatch");
     std::memcpy(in, input, total * sizeof(fftwf_complex));
 
-    // Build plan — FFTW_MEASURE auto-tunes the plan (may take a few seconds
-    // for large transforms; use FFTW_ESTIMATE if startup time is critical)
+    // FFTW_MEASURE auto-tunes the plan 
     int n_arr[1] = { static_cast<int>(fft_size) };
     fftwf_plan plan = fftwf_plan_many_dft(
         /*rank*/   1, n_arr, static_cast<int>(batch_size),
