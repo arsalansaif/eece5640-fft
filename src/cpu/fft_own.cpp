@@ -68,7 +68,7 @@ BenchResult run_own_cpu_bench(
 
     omp_set_num_threads(num_threads);
 
-    // Working buffer — refilled from input before each timed rep so we measure
+    // Buffer — refilled from input before each timed rep so we measure
     // only FFT computation, not side effects of the previous run's in-place result.
     std::vector<cf32> buf(fft_size * batch_size);
 
