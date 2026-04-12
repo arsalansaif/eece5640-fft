@@ -35,9 +35,9 @@ Two CUDA kernels depending on FFT size:
 
 | Experiment | Description |
 |---|---|
-| 1 — Speedup sweep | GFlops vs FFT size (64 to 65536) across all four implementations |
-| 2 — Batch scaling | Throughput vs batch size (1 to 524288) at fixed N=1024 |
-| 3 — Thread scaling | Strong and weak scaling on CPU across 1–16 threads |
+| Speedup sweep | GFlops vs FFT size (64 to 65536) across all four implementations |
+| Batch scaling | Throughput vs batch size (1 to 524288) at fixed N=1024 |
+| Thread scaling | Strong and weak scaling on CPU across 1–16 threads |
 | Verification | Correctness check: NRMSE vs MKL reference across 3 signal types × 3 sizes |
 
 ## Key Results
