@@ -140,7 +140,3 @@ python3 scripts/plot_results.py
 ```
 
 Pre-generated results are in `results/`, figures in `figures/`.
-
-## Report
-
-See `report.pdf` for full implementation details, experiments, profiling, roofline analysis, and discussion.
